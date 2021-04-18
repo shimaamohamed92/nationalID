@@ -11,7 +11,7 @@ SECRET_KEY = env(
     default="xixC95IExy927kZnCPeD7ho5VU42ibQeGNlR4xUXbrAph8L4hsANmdpHlunUeeXj",
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1", "https://nationaid.herokuapp.com/"]
 
 # CACHES
 # ------------------------------------------------------------------------------
