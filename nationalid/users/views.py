@@ -68,7 +68,7 @@ class NationalCreateAPI(mixins.ListModelMixin,
         national, created  = NationalId.objects.get_or_create(nantional_id=nationalid)
         print(national)
         length = len(str(national.nantional_id))
-        if length == 14:
+        if length == 14 and str(national.nantional_id).isdigit():
             specific_birthday = nationalid[1:7]
             birth = datetime.strptime(specific_birthday, birthday_format)
             national.birth = birth
